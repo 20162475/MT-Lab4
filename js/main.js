@@ -37,3 +37,5 @@ function handleError(error) {
 }
 
 navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError); // Get user video
+
+setInterval(drawFrame, 50); // Start detector
